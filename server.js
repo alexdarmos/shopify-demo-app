@@ -27,14 +27,15 @@ app.prepare().then(() => {
           scopes: ['read_products'],
           afterAuth(ctx) {
             const { shop, accessToken } = ctx.session;
+            ctx.cookies.set('shopOrigin', shop, { httpOnly: false });
+
     
             ctx.redirect('/');
           },
         }),
       );
     
-      server.use(verifyRequest());
-
+    server.use(verifyRequest());
     server.use(async (ctx) => {
       await handle(ctx.req, ctx.res);
       ctx.respond = false;

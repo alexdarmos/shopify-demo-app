@@ -104,23 +104,50 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _shopify_polaris__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @shopify/polaris */ "@shopify/polaris");
+/* harmony import */ var _shopify_polaris__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "C:\\Users\\alex.ZZPERFORMANCE\\dev\\shopify-demo-app\\pages\\index.js";
 
 
+var img = 'https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg';
+
 var Index = function Index() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Page"], {
+    primaryAction: {
+      content: 'Select products'
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 2
+      lineNumber: 8
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Layout"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["EmptyState"], {
+    heading: "Discount your products temporarily",
+    action: {
+      content: 'Select products',
+      onAction: function onAction() {
+        return console.log('clicked');
+      }
+    },
+    image: img,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3
+      lineNumber: 22
     },
     __self: this
-  }, "Sample app using React and Next.js"));
+  }, "Select products to change their price temporarily."))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -136,6 +163,17 @@ var Index = function Index() {
 
 module.exports = __webpack_require__(/*! C:\Users\alex.ZZPERFORMANCE\dev\shopify-demo-app\pages\index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "@shopify/polaris":
+/*!***********************************!*\
+  !*** external "@shopify/polaris" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@shopify/polaris");
 
 /***/ }),
 
